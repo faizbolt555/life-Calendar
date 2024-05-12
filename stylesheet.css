@@ -24,11 +24,6 @@ main {
     float: right;
 }
 
-.calendar {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
 footer {
     width: 100%;
@@ -36,6 +31,35 @@ footer {
     clear: both;
 }
 
+
+
+.calendar {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .month {
     border: 1px solid black;
+    display: grid;
+}
+
+.month-name {
+    width: 100%;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
+.days-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.day {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
 }
